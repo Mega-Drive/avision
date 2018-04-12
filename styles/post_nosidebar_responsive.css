@@ -45,10 +45,7 @@
 
 @media only screen and (max-width: 1380px)
 {
-	.home_slider_next
-	{
-		width: 315px;
-	}
+
 }
 
 /************
@@ -57,14 +54,7 @@
 
 @media only screen and (max-width: 1280px)
 {
-	.home_slider_next
-	{
-		width: 285px;
-	}
-	.home_slider_next_link
-	{
-		font-size: 16px;
-	}
+	
 }
 
 /************
@@ -76,14 +66,6 @@
 	.header_search_input
 	{
 		width: 193px;
-	}
-	.home_slider_next_container
-	{
-		left: calc(((100vw - 960px) / 2) + (960px * 0.75) + 8px);
-	}
-	.home_slider_nav_container
-	{
-		left: calc(((100vw - 960px) / 2) + (960px * 0.75) + 8px);
 	}
 	.section_tags
 	{
@@ -110,7 +92,7 @@
 	.card_default_no_image,
 	.card_default_with_background
 	{
-		width: 330px;
+		width: calc(50% - 30px);
 	}
 	.side_post_image div
 	{
@@ -280,19 +262,9 @@
 
 @media only screen and (max-width: 767px)
 {
-	.home_slider_next
+	.home_content
 	{
-		width: 285px;
-		height: 210px;
-	}
-	.home_slider_next_link
-	{
-		font-size: 16px;
-	}
-	.home_slider_nav_container
-	{
-		right: 215px;
-		bottom: 227px;
+		top: 58%;
 	}
 	.section_tags
 	{
@@ -317,31 +289,10 @@
 	{
 		width: 100%;
 	}
-	.videos
+	.post_body
 	{
-		height: auto;
-	}
-	.player_container
-	{
-		height: 287px !important;
-	}
-	.playlist
-	{
-		position: relative;
-		top: auto;
-		left: auto;
-		right: auto;
-		width: 100%;
-		height: auto;
-		padding-left: 35px;
-	}
-	.playlist_background
-	{
-		width: 100%;
-	}
-	.player_container
-	{
-		width: 100%;
+		padding-left: 49px;
+		padding-right: 55px;
 	}
 }
 
@@ -380,23 +331,63 @@
 	{
 		height: 60px;
 	}
-	.home_slider_next_container,
-	.home_slider_nav_container
+	.home_content
+	{
+		width: 100%;
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+	.post_title
+	{
+		font-size: 20px;
+	}
+	.post_panel .post_meta
+	{
+		font-size: 12px;
+		margin-left: 10px;
+	}
+	.post_panel .post_meta a,
+	.post_panel .post_meta span
+	{
+		font-size: 12px;
+	}
+	.post_panel_top .post_share
 	{
 		display: none;
 	}
-	.home_slider_content_container
+	.bottom_panel .author_image,
+	.bottom_panel .post_meta
 	{
-		top: 58%;
+		display: none;
 	}
-	.home_slider_item_title a
+	.post_quote
 	{
-		font-size: 20px;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.post_p,
+	.post_quote .post_p,
+	.post_quote_source
+	{
+		font-size: 13px;
 	}
 	.card-body
 	{
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+	.comment_input
+	{
+		width: 100%;
+	}
+	.comment_input_email
+	{
+		margin-top: 20px;
+	}
+	.post_body
+	{
+		padding-left: 30px;
+		padding-right: 40px;
 	}
 }
 

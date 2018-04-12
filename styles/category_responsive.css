@@ -385,13 +385,9 @@
 	{
 		display: none;
 	}
-	.home_slider_content_container
-	{
-		top: 58%;
-	}
 	.home_slider_item_title a
 	{
-		font-size: 20px;
+		font-size: 24px;
 	}
 	.card-body
 	{

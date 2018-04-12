@@ -7,12 +7,10 @@
 1. Vars and Inits
 2. Set Header
 3. Init Menu
-4. Init Home Slider
-5. Init Video
-6. Init Top Slider
-7. Init Vid Slider
-8. Init Events Slider
-9. Init Grid
+4. Init Top Slider
+5. Init Vid Slider
+6. Init Events Slider
+7. Init Grid
 
 
 ******************************/
@@ -45,8 +43,6 @@ $(document).ready(function()
 	});
 
 	initMenu();
-	initHomeSlider();
-	initVideo();
 	initTopSlider();
 	initVidSlider();
 	initEventsSlider();
@@ -124,101 +120,7 @@ $(document).ready(function()
 
 	/* 
 
-	4. Init Home Slider
-
-	*/
-
-	function initHomeSlider()
-	{
-		if($('.home_slider').length)
-		{
-			var homeSlider = $('.home_slider');
-			homeSlider.owlCarousel(
-			{
-				items:1,
-				autoplay:false,
-				loop:true,
-				smartSpeed:1200,
-				dots:true,
-				dotsContainer:'.custom_dots_home_slider',
-				nav:false
-			});
-
-			if($('.home_slider_next').length)
-			{
-				$('.home_slider_next').on('click', function()
-				{
-					homeSlider.trigger('next.owl.carousel');
-				});
-			}
-
-			if($('.custom_prev_home_slider').length)
-			{
-				$('.custom_prev_home_slider').on('click', function()
-				{
-					homeSlider.trigger('prev.owl.carousel');
-				});
-			}
-
-			if($('.custom_next_home_slider').length)
-			{
-				$('.custom_next_home_slider').on('click', function()
-				{
-					homeSlider.trigger('next.owl.carousel');
-				});
-			}
-
-			/* Custom dots events */
-			if($('.custom_dot_home_slider').length)
-			{
-				$('.custom_dot_home_slider').on('click', function(ev)
-				{	
-					var dot = $(ev.target);
-					$('.custom_dot_home_slider').removeClass('active');
-					dot.addClass('active');
-					homeSlider.trigger('to.owl.carousel', [$(this).index(), 300]);
-				});
-			}
-
-			/* Change active class for dots when slide changes by nav or touch */
-			homeSlider.on('changed.owl.carousel', function(event)
-			{
-				$('.custom_dot_home_slider').removeClass('active');
-				$('.custom_dots_home_slider li').eq(event.page.index).addClass('active');
-			});	
-		}
-	}
-
-	/* 
-
-	5. Init Video
-
-	*/
-
-	function initVideo()
-	{
-		if($("#P1").length)
-		{
-			$("#P1").YTPlayer();
-			if($('.video_container').length)
-			{
-				var videos = $('.video_container');
-				videos.each(function()
-				{
-					var video = $(this);
-					video.on('click', function()
-					{
-						videos.removeClass('active');
-						video.addClass('active');
-					});
-				});
-			}
-		}	
-	}
-
-	/* 
-
-	6. Init Top Slider
+	4. Init Top Slider
 
 	*/
 
@@ -278,7 +180,7 @@ $(document).ready(function()
 
 	/* 
 
-	7. Init Vid Slider
+	5. Init Vid Slider
 
 	*/
 
@@ -338,7 +240,7 @@ $(document).ready(function()
 
 	/* 
 
-	8. Init Events Slider
+	6. Init Events Slider
 
 	*/
 
@@ -398,7 +300,7 @@ $(document).ready(function()
 
 	/* 
 
-	9. Init Grid
+	7. Init Grid
 
 	*/
 
